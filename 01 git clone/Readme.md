@@ -56,16 +56,16 @@ Uveďte všechny příkazy, které musíte zadat do příkazové řádky. Citliv
 ### Řešení 4
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "qop727@gmail.com"     #Uložit soubor do ~/.ssh/nazev_souboru_s_ulozenym_SSH
+ssh-keygen -t rsa -b 4096 -C "your_mail@gmail.com"     #Uložit soubor do ~/.ssh/nazev_souboru_s_ulozenym_SSH
 cd ~/.ssh
 new-item -Type:file "config"
 @"
 Host github.com
     HostName github.com
-    User qop727
+    User user_name
     IdentityFile ~/.ssh/nazev_souboru_s_ulozenym_SSH
     IdentitiesOnly yes
 "@ > config
 cat ~/.ssh/nazev_souboru_s_ulozenym_SSH.pub     #Zkopírovat zobrazený ssh klíč do nastavení GitHub účtu
-git clone git@github.com:qop727
+git clone git@github.com:user_name
 ```
