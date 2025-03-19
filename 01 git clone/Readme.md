@@ -69,3 +69,25 @@ Host github.com
 cat ~/.ssh/nazev_souboru_s_ulozenym_SSH.pub     #Zkopírovat zobrazený ssh klíč do nastavení GitHub účtu
 git clone git@github.com:user_name
 ```
+VS Code User settings.json:
+{
+    "git.autofetch": "all",
+    "github.gitProtocol": "ssh",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "powershell.powerShellAdditionalExePaths": {
+    "Linux": "/opt/microsoft/powershell/7/pwsh"
+    },
+    "terminal.integrated.profiles.linux": {
+    "bash": {
+        "path": "/bin/bash"
+    },
+    "zsh": {
+        "path": "/bin/zsh"
+    },
+    "PowerShell": {
+        "path": "/opt/microsoft/powershell/7/pwsh"
+    }
+    },
+    "terminal.integrated.defaultProfile.linux": "PowerShell",
+    "python.analysis.useLibraryCodeForTypes": true
+}
